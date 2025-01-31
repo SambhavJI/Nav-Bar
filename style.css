@@ -1,0 +1,135 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #ffffff; 
+    padding: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+
+.sidebar img {
+    width: 40px;
+    height: 35px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 5px;
+    border-radius: 25px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 350px;
+    font-size: 16px;
+    border-radius: 25px 0 0 25px;
+}
+
+.search-button {
+    border: none;
+    background: #0056b3;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 0 25px 25px 0;
+}
+
+.search-button:hover {
+    background: #003f7f;
+}
+
+.right ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.right ul li {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(255, 5, 5);
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.right ul li:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .search-container {
+        margin: 10px 0;
+    }
+
+    .right ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .right ul li {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+}
+.sidebar img {
+    width: 40px;
+    height: 35px;
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.sidebar img:hover {
+    transform: scale(1.1); /* Slightly enlarges the image */
+}
+
+.icon img {
+    width: 80px;
+    height: auto;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* Smooth animation */
+}
+
+.icon img:hover {
+    transform: scale(1.1) rotate(5deg); /* Slightly enlarges and tilts */
+    filter: brightness(1.2); /* Makes the icon brighter */
+}
+.a1{
+    height: 80vh;
+    width: 50vw;
+    background-color: black;
+}
+.a2{
+    height: 80vh;
+    width: 50vw;
+    background-color: rgb(3, 52, 61);
+}
+.a3{
+    display: flex;
+}
